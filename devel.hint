@@ -1,0 +1,5 @@
+category: X11
+requires: cygwin libX11 libXft libXp libXt imake
+external-source: lesstif
+sdesc: "Open-source Motif clone (development)"
+ldesc: "Open-source Motif clone"

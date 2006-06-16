@@ -1,0 +1,4 @@
+category: X11
+requires: cygwin libXm2
+sdesc: "Open-source Motif clone (utilities)"
+ldesc: "Open-source Motif clone"
