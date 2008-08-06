@@ -1,4 +1,3 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure -x gnome-doc-utils.make -x intltool.m4 -x omf.make -x xmldocs.make origsrc/lesstif-0.95.0/acinclude.m4 src/lesstif-0.95.0/acinclude.m4
 --- origsrc/lesstif-0.95.0/acinclude.m4	2005-11-01 02:14:56.000000000 -0600
 +++ src/lesstif-0.95.0/acinclude.m4	2006-06-15 17:49:39.031250000 -0500
 @@ -463,7 +463,7 @@
@@ -36,7 +35,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
  dnl
 +sinclude([ac_debug.m4])
 +sinclude([ac_have_libxp.m4])
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure -x gnome-doc-utils.make -x intltool.m4 -x omf.make -x xmldocs.make origsrc/lesstif-0.95.0/lib/Xm-2.1/Print.c src/lesstif-0.95.0/lib/Xm-2.1/Print.c
 --- origsrc/lesstif-0.95.0/lib/Xm-2.1/Print.c	2002-04-30 17:05:16.000000000 -0500
 +++ src/lesstif-0.95.0/lib/Xm-2.1/Print.c	2006-06-14 18:47:41.953125000 -0500
 @@ -77,11 +77,11 @@
@@ -53,7 +51,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
  
  
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure -x gnome-doc-utils.make -x intltool.m4 -x omf.make -x xmldocs.make origsrc/lesstif-0.95.0/test/acinclude.m4 src/lesstif-0.95.0/test/acinclude.m4
 --- origsrc/lesstif-0.95.0/test/acinclude.m4	1969-12-31 18:00:00.000000000 -0600
 +++ src/lesstif-0.95.0/test/acinclude.m4	2006-06-14 18:47:42.031250000 -0500
 @@ -0,0 +1 @@
