@@ -3,31 +3,30 @@ lesstif
 Open-source Motif clone
 
 Runtime requirements:
-  libX11_6-1.0.0-2
-  libXft2-2.1.8.2-1
-  libXp6-1.0.0-1
-  libXt6-1.0.0-1
+  cygwin-1.5.25-15
+  libX11_6-1.1.5-1
+  libXext6-1.0.4-1
+  libXt6-1.0.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  bison-2.1-1
-  cygport-0.2.2-1
-  flex-2.5.4a-4
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  sed-4.1.5-1
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-2
+  binutils-20080624-2
+  bison-2.3-1
+  cygport-0.4.2-1
+  flex-2.5.35-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.lesstif.org/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/lesstif/
+  http://downloads.sourceforge.net/lesstif/
 
 -------------------------------------------
 
@@ -41,15 +40,14 @@ Build instructions:
 This will create:
   /usr/src/lesstif-0.95.0-X-src.tar.bz2
   /usr/src/lesstif-0.95.0-X.tar.bz2
-  /usr/src/lesstif-devel-0.95.0-X.tar.bz2
-  /usr/src/lesstif-doc-0.95.0-X.tar.bz2
-  /usr/src/libDtPrint1-0.95.0-X.tar.bz2
+  /usr/src/libXm-devel-0.95.0-X.tar.bz2
   /usr/src/libXm2-0.95.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(lesstif)
   /etc/X11/app-defaults/Mwm
   /usr/bin/mwm.exe
   /usr/bin/uil.exe
@@ -57,7 +55,6 @@ Files included in the binary package:
   /usr/lib/X11/mwm/README
   /usr/lib/X11/mwm/alt.map
   /usr/lib/X11/mwm/system.mwmrc
-  /usr/share/doc/Cygwin/lesstif-0.95.0.README
   /usr/share/doc/lesstif-0.95.0/AUTHORS
   /usr/share/doc/lesstif-0.95.0/BUG-REPORTING
   /usr/share/doc/lesstif-0.95.0/COPYING
@@ -78,19 +75,14 @@ Files included in the binary package:
   /usr/share/man/man1/xmbind.1.gz
   /usr/share/man/man5/mwmrc.5.gz
 
-Files included in the runtime library package:
-
-  /usr/bin/cygDtPrint-1.dll
-
+(libXm2)
   /usr/bin/cygMrm-2.dll
   /usr/bin/cygUil-2.dll
   /usr/bin/cygXm-2.dll
 
-Files included in the devel package:
-
+(libXM-devel)
   /usr/bin/motif-config
   /usr/bin/mxmkmf
-  /usr/include/X11/Dt/Print.h
   /usr/include/X11/Mrm/MrmAppl.h
   /usr/include/X11/Mrm/MrmDecls.h
   /usr/include/X11/Mrm/MrmPrivate.h
@@ -264,8 +256,6 @@ Files included in the devel package:
   /usr/lib/LessTif/config/LessTif.rules
   /usr/lib/LessTif/config/LessTif.tmpl
   /usr/lib/LessTif/config/host.def
-  /usr/lib/libDtPrint.dll.a
-  /usr/lib/libDtPrint.la
   /usr/lib/libMrm.dll.a
   /usr/lib/libMrm.la
   /usr/lib/libUil.dll.a
@@ -273,149 +263,6 @@ Files included in the devel package:
   /usr/lib/libXm.dll.a
   /usr/lib/libXm.la
   /usr/share/aclocal/ac_find_motif.m4
-
-Files included in the doc package:
-
-  /usr/share/doc/lesstif-0.95.0/doc/Advocacy.html
-  /usr/share/doc/lesstif-0.95.0/doc/All.html
-  /usr/share/doc/lesstif-0.95.0/doc/BUG-HUNTING.html
-  /usr/share/doc/lesstif-0.95.0/doc/COPYING.LIB.html
-  /usr/share/doc/lesstif-0.95.0/doc/Clipboard.txt
-  /usr/share/doc/lesstif-0.95.0/doc/DragAndDrop.txt
-  /usr/share/doc/lesstif-0.95.0/doc/FAQ.html
-  /usr/share/doc/lesstif-0.95.0/doc/Form.txt
-  /usr/share/doc/lesstif-0.95.0/doc/GeoUtils.txt
-  /usr/share/doc/lesstif-0.95.0/doc/Geometry.html
-  /usr/share/doc/lesstif-0.95.0/doc/INSTALL.html
-  /usr/share/doc/lesstif-0.95.0/doc/Lessdox
-  /usr/share/doc/lesstif-0.95.0/doc/PROGRAMMING_TIPS.html
-  /usr/share/doc/lesstif-0.95.0/doc/ReleaseNotes.html
-  /usr/share/doc/lesstif-0.95.0/doc/SyntheticResources.txt
-  /usr/share/doc/lesstif-0.95.0/doc/UIL.txt
-  /usr/share/doc/lesstif-0.95.0/doc/XmStrings.txt
-  /usr/share/doc/lesstif-0.95.0/doc/XpREADME.html
-  /usr/share/doc/lesstif-0.95.0/doc/XprtConfig.html
-  /usr/share/doc/lesstif-0.95.0/doc/about.html
-  /usr/share/doc/lesstif-0.95.0/doc/apps.html
-  /usr/share/doc/lesstif-0.95.0/doc/bugs.html
-  /usr/share/doc/lesstif-0.95.0/doc/bugs_frame.html
-  /usr/share/doc/lesstif-0.95.0/doc/cdrom.html
-  /usr/share/doc/lesstif-0.95.0/doc/contents.html
-  /usr/share/doc/lesstif-0.95.0/doc/core.html
-  /usr/share/doc/lesstif-0.95.0/doc/cvs.html
-  /usr/share/doc/lesstif-0.95.0/doc/doc_frame.html
-  /usr/share/doc/lesstif-0.95.0/doc/download.html
-  /usr/share/doc/lesstif-0.95.0/doc/feedback.html
-  /usr/share/doc/lesstif-0.95.0/doc/frames.html
-  /usr/share/doc/lesstif-0.95.0/doc/future.html
-  /usr/share/doc/lesstif-0.95.0/doc/get_frame.html
-  /usr/share/doc/lesstif-0.95.0/doc/help.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/ApplicationShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/Composite.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/Constraint.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/Core.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/LessTifInternals.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/Object.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/OverrideShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/Rect.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/Shell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/TopLevelShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/TransientShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/UnNamedObj.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/VendorShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/VirtualBindings.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/WmShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmArrowButton.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmArrowButtonGadget.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmBulletinBoard.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmCascadeButton.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmCascadeButtonGadget.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmClipboard.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmComboBox.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmCommand.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDesktop.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDialogShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDialogShellExt.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDisplay.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDragContext.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDragIcon.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDragOverShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDrawingArea.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDrawnButton.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDropSiteManager.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmDropTransfer.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmFileSelectionBox.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmForm.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmFrame.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmGadget.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmGrabShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmIconGadget.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmLabel.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmLabelGadget.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmList.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmMainWindow.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmManager.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmMenuShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmMessageBox.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmNotebook.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmPanedWindow.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmPrimitive.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmProtocol.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmPushButton.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmPushButtonGadget.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmRowColumn.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmSash.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmScale.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmScreen.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmScrollBar.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmScrolledWindow.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmSelectionBox.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmSeparator.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmSeparatorGadget.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmSpinBox.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmString.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmTearOffButton.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmText.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmTextField.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmToggleButton.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmToggleButtonGadget.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmVendorShell.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/XmWorld.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/lesstif.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/mwm.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/mwmrc.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/uil.html
-  /usr/share/doc/lesstif-0.95.0/doc/html/xmbind.html
-  /usr/share/doc/lesstif-0.95.0/doc/images/hungry.png
-  /usr/share/doc/lesstif-0.95.0/doc/images/lesstif-realsmall.png
-  /usr/share/doc/lesstif-0.95.0/doc/images/lesstif-small.png
-  /usr/share/doc/lesstif-0.95.0/doc/images/lesstif.jpg
-  /usr/share/doc/lesstif-0.95.0/doc/images/lesstif.png
-  /usr/share/doc/lesstif-0.95.0/doc/images/ltsunlogo.jpg
-  /usr/share/doc/lesstif-0.95.0/doc/images/ltsunlogo.png
-  /usr/share/doc/lesstif-0.95.0/doc/images/vh32.jpg
-  /usr/share/doc/lesstif-0.95.0/doc/images/vh32.png
-  /usr/share/doc/lesstif-0.95.0/doc/images/vh40.jpg
-  /usr/share/doc/lesstif-0.95.0/doc/images/vh40.png
-  /usr/share/doc/lesstif-0.95.0/doc/index.html
-  /usr/share/doc/lesstif-0.95.0/doc/known.html
-  /usr/share/doc/lesstif-0.95.0/doc/links.html
-  /usr/share/doc/lesstif-0.95.0/doc/lists.html
-  /usr/share/doc/lesstif-0.95.0/doc/mirrors.html
-  /usr/share/doc/lesstif-0.95.0/doc/misc_frame.html
-  /usr/share/doc/lesstif-0.95.0/doc/news.html
-  /usr/share/doc/lesstif-0.95.0/doc/news_frame.html
-  /usr/share/doc/lesstif-0.95.0/doc/platforms.html
-  /usr/share/doc/lesstif-0.95.0/doc/printing.html
-  /usr/share/doc/lesstif-0.95.0/doc/related_frame.html
-  /usr/share/doc/lesstif-0.95.0/doc/release-policy.html
-  /usr/share/doc/lesstif-0.95.0/doc/test_policy.html
-  /usr/share/doc/lesstif-0.95.0/doc/test_summary.html
-  /usr/share/doc/lesstif-0.95.0/doc/testers.html
-  /usr/share/doc/lesstif-0.95.0/doc/thread.html
-  /usr/share/doc/lesstif-0.95.0/doc/titlebar.html
-  /usr/share/doc/lesstif-0.95.0/doc/versions.html
-  /usr/share/doc/lesstif-0.95.0/doc/web_button.html
   /usr/share/man/man3/ApplicationShell.3.gz
   /usr/share/man/man3/Composite.3.gz
   /usr/share/man/man3/Constraint.3.gz
@@ -491,6 +338,9 @@ Files included in the doc package:
 ------------------
 
 Port Notes:
+
+----- version 0.95.0-2 -----
+Removed dependency on deprecated libXp.
 
 ----- version 0.95.0-1 -----
 Version bump, built for modular X11.

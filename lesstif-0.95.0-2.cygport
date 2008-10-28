@@ -1,0 +1,36 @@
+DESCRIPTION="Open source Motif implementation"
+HOMEPAGE="http://www.lesstif.org/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+PATCH_URI="
+	mirror://portage/x11-libs/${PN}/files/CAN-2005-0605.patch
+	mirror://portage/x11-libs/${PN}/files/${PN}-0.95.0-vendorsp-cxx.patch
+	0.95.0-libtool22.patch
+"
+
+PKG_NAMES="${PN} libXm2 libXm-devel"
+PKG_HINTS="setup libxm libxm-dev"
+lesstif_CONTENTS="etc/ usr/bin/*.exe usr/lib/X11/ usr/share/doc/
+                  usr/share/man/man[15]/"
+libXm2_CONTENTS="usr/bin/*-2.dll"
+libXm_devel_CONTENTS="usr/bin/motif-config usr/bin/mxmkmf usr/include/
+                      usr/lib/LessTif usr/lib/lib* usr/share/aclocal/
+                      usr/share/man/man3"
+DIFF_EXCLUDES="motif-config"
+
+ACLOCAL_FLAGS="-I . -I .."
+CYGCONF_ARGS="
+		--enable-production --disable-debug --disable-verbose \
+		--with-editres --with-xdnd --with-x \
+		--with-freetype-config=/usr/bin/freetype-config \
+		--with-fontconfig-includes=/usr/include \
+		--with-fontconfig-lib=/usr/lib
+"
+
+src_install() {
+	cd ${B}
+	cyginstall \
+		appdir=/etc/X11/app-defaults \
+		rootdir=/usr/share/doc/${P}
+
+	rm -fr ${D}/usr/share/doc/${P}/doc/
+}

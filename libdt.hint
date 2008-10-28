@@ -1,5 +1,0 @@
-category: X11
-requires: cygwin libXm2
-external-source: lesstif
-sdesc: "Open-source Motif clone (printing libraries)"
-ldesc: "Open-source Motif clone"
