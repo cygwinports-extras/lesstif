@@ -1,0 +1,10 @@
+--- origsrc/lesstif-0.95.0/scripts/motif-config.in	2005-01-14 13:36:00.000000000 -0600
++++ src/lesstif-0.95.0/scripts/motif-config.in	2008-11-22 20:42:34.041048700 -0600
+@@ -84,6 +84,6 @@
+ fi
+ 
+ if test "$echo_libs" = "yes"; then
+-      echo "-L$L/lib -L/usr/X11R6/lib -lXm -lXt $my_glib_libs $XR -lXext -lX11"
++      echo "-L$L/lib -lXm -lXt $my_glib_libs $XR -lXext -lX11"
+ fi      
+ 
