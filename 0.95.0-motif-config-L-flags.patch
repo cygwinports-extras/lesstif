@@ -5,6 +5,6 @@
  
  if test "$echo_libs" = "yes"; then
 -      echo "-L$L/lib -L/usr/X11R6/lib -lXm -lXt $my_glib_libs $XR -lXext -lX11"
-+      echo "-L$L/lib -lXm -lXt $my_glib_libs $XR -lXext -lX11"
++      echo "-L$L/lib -lXm -lXt -lXext -lX11"
  fi      
  

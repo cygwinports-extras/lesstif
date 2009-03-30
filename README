@@ -3,23 +3,24 @@ lesstif
 Open-source Motif clone
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libX11_6-1.1.5-1
-  libXext6-1.0.4-1
-  libXt6-1.0.5-1
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libX11_6-1.2-10
+  libXext6-1.0.5-10
+  libXt6-1.0.5-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-2
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
   bison-2.3-1
-  cygport-0.4.2-1
+  cygport-0.9.6-1
   flex-2.5.35-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-11
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -55,19 +56,17 @@ Files included in the binary packages:
   /usr/lib/X11/mwm/README
   /usr/lib/X11/mwm/alt.map
   /usr/lib/X11/mwm/system.mwmrc
-  /usr/share/doc/lesstif-0.95.0/AUTHORS
-  /usr/share/doc/lesstif-0.95.0/BUG-REPORTING
-  /usr/share/doc/lesstif-0.95.0/COPYING
-  /usr/share/doc/lesstif-0.95.0/COPYING.LIB
-  /usr/share/doc/lesstif-0.95.0/CREDITS
-  /usr/share/doc/lesstif-0.95.0/ChangeLog
-  /usr/share/doc/lesstif-0.95.0/FAQ
-  /usr/share/doc/lesstif-0.95.0/INSTALL
-  /usr/share/doc/lesstif-0.95.0/INSTALL.txt
-  /usr/share/doc/lesstif-0.95.0/NEWS
-  /usr/share/doc/lesstif-0.95.0/README
-  /usr/share/doc/lesstif-0.95.0/ReleaseNotes.html
-  /usr/share/doc/lesstif-0.95.0/ReleaseNotes.txt
+  /usr/share/doc/lesstif/AUTHORS
+  /usr/share/doc/lesstif/BUG-REPORTING
+  /usr/share/doc/lesstif/COPYING
+  /usr/share/doc/lesstif/COPYING.LIB
+  /usr/share/doc/lesstif/CREDITS
+  /usr/share/doc/lesstif/ChangeLog
+  /usr/share/doc/lesstif/FAQ
+  /usr/share/doc/lesstif/NEWS
+  /usr/share/doc/lesstif/README
+  /usr/share/doc/lesstif/ReleaseNotes.html
+  /usr/share/doc/lesstif/ReleaseNotes.txt
   /usr/share/man/man1/lesstif.1.gz
   /usr/share/man/man1/ltversion.1.gz
   /usr/share/man/man1/mwm.1.gz
@@ -339,11 +338,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.95.0-2 -----
-Removed dependency on deprecated libXp.
-
------ version 0.95.0-1 -----
-Version bump, built for modular X11.
+----- version 0.95.0-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
