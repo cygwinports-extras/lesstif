@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libXm2 libX11-devel libXt-devel imake printproto xproto
+requires: libXm2 libX11-devel libXt-devel imake printproto xproto
 external-source: lesstif
 sdesc: "Open-source Motif clone (development)"
 ldesc: "Open-source Motif clone"
