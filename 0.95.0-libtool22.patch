@@ -29,20 +29,17 @@
  [AC_REQUIRE([AC_PATH_X])
  AC_CACHE_CHECK(whether libXp is available, lt_cv_libxp,
  [lt_save_CFLAGS="$CFLAGS"
-@@ -34,9 +34,9 @@
- ])
- if test $lt_cv_libxp = yes; then
-   AC_DEFINE(HAVE_LIB_XP)
--  LT_HAVELIBXP=1
-+  LESSTIF_HAVELIBXP=1
- else
--  LT_HAVELIBXP=0 
-+  LESSTIF_HAVELIBXP=0 
- fi
- AM_CONDITIONAL(Have_Libxp, test "$lt_cv_libxp" = "yes")
- AC_SUBST(LT_HAVELIBXP)
 --- origsrc/lesstif-0.95.0/acinclude.m4	2005-11-01 02:14:56.000000000 -0600
 +++ src/lesstif-0.95.0/acinclude.m4	2008-10-27 21:50:37.638420900 -0500
+@@ -265,7 +265,7 @@ dnl
+ dnl This should be the canonical approach to check for XTHREADS.
+ dnl (see "man XtToolkitThreadInitialize")
+ dnl
+-AC_DEFUN([LT_LIB_XTHREADS],
++AC_DEFUN([LESSTIF_LIB_XTHREADS],
+ [AC_REQUIRE([AC_PATH_X])
+ AC_CACHE_CHECK(whether libXt was compiled with -DXTHREADS, lt_cv_xthreads,
+ [lt_save_CFLAGS="$CFLAGS"
 @@ -330,7 +330,7 @@
  dnl
  dnl Extended check for gethostname()
@@ -146,16 +143,23 @@
  
  dnl
  dnl Whether to link -lXp
-@@ -398,7 +398,7 @@
- dnl
- dnl Build libDtPrint (in lib/Dt) only if we have libXp and we're building a 2.1 version.
- dnl
--AM_CONDITIONAL(BuildLibDtPrint, test "$LT_HAVELIBXP" = "1" -a "$Build21" = "yes")
-+AM_CONDITIONAL(BuildLibDtPrint, test "$LESSTIF_HAVELIBXP" = "1" -a "$Build21" = "yes")
+@@ -415,7 +415,7 @@ fi
+ AC_SUBST(MOTIF_LIBS)
  
- AC_PATH_MOTIF
- if test -n "$motif_includes"; then
-@@ -444,7 +444,7 @@
+ dnl Our own check for XTHREADS
+-LT_LIB_XTHREADS
++LESSTIF_LIB_XTHREADS
+ 
+ dnl Adjust some standard variables
+ 
+@@ -438,13 +438,13 @@ esac
+ dnl
+ dnl Look for a tool to convert HTML into ASCII
+ dnl
+-LT_HTML2TXT
++LESSTIF_HTML2TXT
+ 
+ dnl
  dnl check for man2html
  dnl
  dnl Hmm, a standard man2html may not be the right tool ...

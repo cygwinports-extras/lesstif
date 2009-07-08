@@ -2,8 +2,6 @@ DESCRIPTION="Open source Motif implementation"
 HOMEPAGE="http://www.lesstif.org/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
 PATCH_URI="
-	mirror://portage/x11-libs/${PN}/files/CAN-2005-0605.patch
-	mirror://portage/x11-libs/${PN}/files/${PN}-0.95.0-vendorsp-cxx.patch
 	0.95.0-libtool22.patch
 	0.95.0-motif-config-L-flags.patch
 "
