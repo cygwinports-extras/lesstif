@@ -1,0 +1,44 @@
+debian_patches="http://patch-tracker.debian.org/patch/series/dl/lesstif2/1:0.95.2-1"
+
+
+DESCRIPTION="Open source Motif implementation"
+HOMEPAGE="http://www.lesstif.org/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+PATCH_URI="
+	0.95.0-motif-config-L-flags.patch
+	${debian_patches}/000_libtool_linking.diff
+	${debian_patches}/005_libtool_LT_HAVE.diff
+	${debian_patches}/005_libtool_obsolete.diff
+	${debian_patches}/020_missing_xm_h.diff
+	${debian_patches}/020_render_table_crash.diff
+	${debian_patches}/020_xpmpipethrough.diff
+	${debian_patches}/030_manpage_VirtualBindings
+	${debian_patches}/030_manpage.diff
+	${debian_patches}/031_use_X11_Xtos_header.diff
+	${debian_patches}/040_fedora_PutPixel32.diff
+	${debian_patches}/040_fedora_XxxxProperty-64bit.diff
+	${debian_patches}/080_fix_spelling-error-in-binary
+"
+
+PKG_NAMES="${PN} libXm2 libXm-devel"
+lesstif_CONTENTS="etc/ usr/bin/*.exe usr/share/doc/ usr/share/man/man[15]/"
+libXm2_CONTENTS="usr/bin/*-2.dll"
+libXm_devel_CONTENTS="usr/bin/motif-config usr/bin/mxmkmf usr/include/
+                      usr/lib/ usr/share/aclocal/ usr/share/man/man3/"
+DIFF_EXCLUDES="motif-config"
+
+ACLOCAL_FLAGS="-I . -I .."
+CYGCONF_ARGS="
+		--enable-production --disable-debug --disable-verbose \
+		--with-editres --with-xdnd --with-x \
+		--with-freetype-config=/usr/bin/freetype-config \
+		--with-fontconfig-includes=/usr/include \
+		--with-fontconfig-lib=/usr/lib
+"
+
+src_install() {
+	cd ${B}
+	cyginstall appdir=/etc/X11/app-defaults rootdir=/usr/share/doc/${PN}
+
+	rm -fr ${D}/usr/share/doc/${PN}/doc/
+}
